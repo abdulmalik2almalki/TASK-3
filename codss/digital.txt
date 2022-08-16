@@ -1,0 +1,15 @@
+int PIRsensor = 0;
+void setup() {
+  pinMode(11, INPUT);
+  pinMode(9, OUTPUT);
+}
+
+void loop() {
+  PIRsensor = digitalRead(11);
+  if(PIRsensor == HIGH) {
+    digitalWrite(9, HIGH);
+     }
+  else{
+    digitalWrite(9,LOW);
+   }
+} 
